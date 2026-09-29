@@ -81,6 +81,6 @@ public class FourBasicOptTest {
     @Test
     public void should_10_divide_0_throw_error() {
         FourBasicOpt opt = new FourBasicOpt();
-        assertThrows(ArithmeticException.class, opt.divide(10, 0));
+        assertThrows(ArithmeticException.class, () -> opt.divide(10, 0));
     }
 }
